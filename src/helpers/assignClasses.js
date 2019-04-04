@@ -13,6 +13,12 @@ const EXISTING_CLASSES = [
 export default (names) => {
     const classes = [...EXISTING_CLASSES];
     return names.map((name) => {
+        if(name === 'filip') {
+            return {
+                name,
+                selectedClass: 'Sorceress'
+            };
+        }
         if(classes.length <= 0) {
             return {
                 name,
